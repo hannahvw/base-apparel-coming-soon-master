@@ -34,8 +34,13 @@
 
         <form class="input">
           <input id="email" type="email" placeholder="Email Address" />
-          <button><img src="images/icon-arrow.svg" alt="" /></button>
+
+          <button id="submit-btn">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+          <img class="error-icon hidden" src="images/icon-error.svg" alt="" />
         </form>
+        <p class="error-msg hidden">Please provide a valid email</p>
       </div>
     </div>
     <footer>
@@ -49,5 +54,6 @@
         >.
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

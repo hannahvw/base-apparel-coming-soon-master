@@ -27,18 +27,18 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    width: 375px;
-    margin-bottom: 15px;
-    text-align: center;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  width: 375px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 img {
@@ -76,6 +76,7 @@ p {
   border-radius: 25px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 #email {
@@ -83,6 +84,7 @@ p {
   background: transparent;
   border-radius: 25px;
   padding: 25px;
+  width: 100%;
 }
 
 #email::placeholder {
@@ -98,4 +100,33 @@ p {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.input button:hover {
+  width: 80px;
+  background: #FAD5D5;
+  right: -5px;
+  top: -1px;
+  bottom: -1px;
+}
+
+.error-msg {
+  color: var(--color-400);
+  font-size: 0.85rem;
+  text-align: left;
+  margin: 10px 0 0 25px;
+}
+
+.error-icon {
+  position: absolute;
+  top: 12px;
+  right: 80px;
+}
+
+.hidden {
+  display: none;
 }
