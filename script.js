@@ -5,6 +5,7 @@ const errorMsg = document.querySelector(".error-msg")
 
 function signUp(event) {
 if (!userInput.value.includes("@")) {
+    event.preventDefault();
 // errorMsg.removeAttribute("class", "hidden");
 //errorIcon.removeAttribute("class", "hidden");
 errorIcon.style.display = "block";
