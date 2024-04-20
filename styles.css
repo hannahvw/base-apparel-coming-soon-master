@@ -22,6 +22,8 @@
 
 html {
   font-family: "Josefin Sans", sans-serif;
+  color: var(--color-100);
+  font-weight: 400;
 }
 
 body {
@@ -36,4 +38,64 @@ body {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     width: 375px;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+img {
+  display: block;
+}
+
+.logo {
+  margin: 25px;
+}
+
+.text-container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bold {
+  color: black;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.input {
+  border: 1px solid var(--color-100);
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#email {
+  border: none;
+  background: transparent;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+#email::placeholder {
+  color: var(--color-100);
+}
+
+.input button {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 25px;
+  width: 70px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
