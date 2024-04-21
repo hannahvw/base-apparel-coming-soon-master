@@ -23,11 +23,16 @@
   <body>
     <div class="container">
       <img class="logo" src="/images/logo.svg" alt="Base Apparel logo" />
-      <picture>
-        <source media="(min-width: 1000px)" srcset="/images/hero-desktop.jpg" />
-        <source media="(min-width: 375px)" srcset="/images/hero-mobile.jpg" />
-        <img src="/images/hero-mobile.jpg" alt="picture of a woman" />
-      </picture>
+      <div class="img-container">
+        <picture>
+          <source
+            media="(min-width: 900px)"
+            srcset="/images/hero-desktop.jpg"
+          />
+          <source media="(min-width: 375px)" srcset="/images/hero-mobile.jpg" />
+          <img src="/images/hero-mobile.jpg" alt="picture of a woman" />
+        </picture>
+      </div>
       <div class="text-container">
         <h1>We're <span class="bold">coming soon</span></h1>
         <p>
