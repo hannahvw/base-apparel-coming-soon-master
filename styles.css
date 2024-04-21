@@ -1,6 +1,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 15px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -32,13 +33,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .container {
-  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   max-width: 375px;
   margin-bottom: 15px;
   text-align: center;
+  overflow: hidden;
 }
 
 img {
@@ -177,6 +180,7 @@ p {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 3fr;
+    column-gap: 50px;
     padding-bottom: 25px;
   }
 
